@@ -33,7 +33,7 @@ Running from command line:
     
 Running with config (see bfgminer.conf example file):
 
-    ./bfgminer --config ./bfgminer.conf
+    ./bfgminer --config ../bfgminer.conf
 
 Tutotial:
 * https://computers.tutsplus.com/tutorials/how-to-create-a-raspberry-pi-bitcoin-miner--cms-20353?_ga=2.51452969.1697175413.1508571994-1473909186.1508571994
@@ -66,7 +66,7 @@ Running from command line:
 
 Running with config (see cpuminer.conf example file):
 
-    ./minerd --config ./cpuminer.conf
+    ./minerd --config ../cpuminer.conf
 
 Tutorial:
 * https://www.gadgetdaily.xyz/mine-bitcoins-with-raspberry-pi/
