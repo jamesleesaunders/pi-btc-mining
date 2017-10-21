@@ -1,17 +1,10 @@
 
 Setup folder:
-pi@raspberrypi:~ $ mkdir mining
-pi@raspberrypi:~ $ cd mining/
+* mkdir mining
+* cd mining
 
 Install dependencies:
-pi@raspberrypi:~/mining $ sudo apt-get install autoconf
-pi@raspberrypi:~/mining $ sudo apt-get install libtool
-pi@raspberrypi:~/mining $ sudo apt-get install uthash-dev
-pi@raspberrypi:~/mining $ sudo apt-get install libjansson-dev
-pi@raspberrypi:~/mining $ sudo apt-get install libevent-dev
-pi@raspberrypi:~/mining $ sudo apt-get install libcurl4-gnutls-dev
-pi@raspberrypi:~/mining $ sudo apt-get install libncurses5-dev libncursesw5-dev
-
+sudo apt-get install autoconf libtool uthash-dev libjansson-dev libevent-dev libcurl4-gnutls-dev libncurses5-dev
 
 Download bfgminer source:
 pi@raspberrypi:~/mining $ git clone https://github.com/luke-jr/bfgminer.git
