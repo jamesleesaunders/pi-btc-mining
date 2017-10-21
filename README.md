@@ -13,12 +13,14 @@ Install dependencies:
 ### BFGMiner
 Download source:
 
-    git clone https://github.com/luke-jr/bfgminer.git
-    Cloning into 'bfgminer'...
+```
+git clone https://github.com/luke-jr/bfgminer.git
+Cloning into 'bfgminer'...
     remote: Counting objects: 47615, done.
     remote: Total 47615 (delta 0), reused 0 (delta 0), pack-reused 47615
     Receiving objects: 100% (47615/47615), 35.68 MiB | 1.07 MiB/s, done.
     Resolving deltas: 100% (30838/30838), done.
+```
 
 Install:
 
