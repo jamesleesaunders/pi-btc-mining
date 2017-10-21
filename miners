@@ -13,7 +13,7 @@
 case "$1" in
 	start)
 		echo "Starting Miners..."
-		screen -dmS bfgminer /home/pi/mining/bfgminer --config=/home/pi/mining/bfgminer.conf --log-file=/home/pi/mining/bfgminer.log
+		screen -dmS bfgminer /home/pi/mining/bfgminer/bfgminer --config=/home/pi/mining/bfgminer.conf --log-file=/home/pi/mining/bfgminer.log
 		echo "  BFG Miner Started"
 		/home/pi/mining/cpuminer/minerd --config=/home/pi/mining/cpuminer.conf >> /home/pi/mining/cpuminer.log 2>&1 &
 		echo "  CPU Miner Started"
