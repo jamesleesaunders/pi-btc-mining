@@ -29,7 +29,7 @@ Install:
 
 Running from command line:
 
-    ./bfgminer -o stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S all
+    ./bfgminer -o stratum.bitcoin.cz:3333 -u jamesleesaunders.kermit -p woof -S all
     
 Running with config (see bfgminer.conf example file):
 
@@ -62,11 +62,11 @@ Install:
 
 Running from command line:
 
-    ./cpuminer/minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.ernie:woof
+    ./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.kermit:woof
 
 Running with config (see cpuminer.conf example file):
 
-    ./cpuminer/minerd --config ./cpuminer.conf
+    ./minerd --config ./cpuminer.conf
 
 Tutorial:
 * https://www.gadgetdaily.xyz/mine-bitcoins-with-raspberry-pi/
