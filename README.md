@@ -82,7 +82,7 @@ Reboot Rasbberr Pi:
 
     sudo reboot
     
-## Other Random Notes
+### Other Random Notes
 
     screen -ls
     sudo screen -dr bfgminer
