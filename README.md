@@ -13,14 +13,12 @@ Install dependencies:
 ### BFGMiner
 Download source:
 
-```
-git clone https://github.com/luke-jr/bfgminer.git
-Cloning into 'bfgminer'...
+    git clone https://github.com/luke-jr/bfgminer.git
+    Cloning into 'bfgminer'...
     remote: Counting objects: 47615, done.
     remote: Total 47615 (delta 0), reused 0 (delta 0), pack-reused 47615
     Receiving objects: 100% (47615/47615), 35.68 MiB | 1.07 MiB/s, done.
     Resolving deltas: 100% (30838/30838), done.
-```
 
 Install:
 
@@ -33,7 +31,7 @@ Running from command line:
 
     ./bfgminer -o stratum.bitcoin.cz:3333 -u jamesleesaunders.kermit -p woof -S all
     
-Running with config (see bfgminer.conf example file):
+Running with config (see: 'bfgminer.conf' example file in this repo):
 
     ./bfgminer --config ../bfgminer.conf
 
@@ -66,9 +64,26 @@ Running from command line:
 
     ./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.elmo:woof
 
-Running with config (see cpuminer.conf example file):
+Running with config (see: 'cpuminer.conf' example file in this repo):
 
     ./minerd --config ../cpuminer.conf
 
 Tutorial:
 * https://www.gadgetdaily.xyz/mine-bitcoins-with-raspberry-pi/
+
+### Create Startup Service
+Copy file init.d script (see: 'miners' file in this repo) to /etc/init.d/ and set correct permissions:
+    
+    cp ./miners /etc/init.d/
+    sudo chmod 755 /etc/init.d/miners
+    sudo chown root:root /etc/init.d/miners
+    
+Reboot Rasbberr Pi:
+
+    sudo reboot
+    
+## Other Random Notes
+
+    screen -ls
+    sudo screen -dr bfgminer
+    CTRL+A+D
