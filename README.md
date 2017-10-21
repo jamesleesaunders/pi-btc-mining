@@ -62,7 +62,7 @@ Install:
 
 Running from command line:
 
-    ./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.kermit:woof
+    ./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.elmo:woof
 
 Running with config (see cpuminer.conf example file):
 
