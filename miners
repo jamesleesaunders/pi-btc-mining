@@ -1,0 +1,34 @@
+#! /bin/bash
+# /etc/init.d/miners
+
+### BEGIN INIT INFO
+# Provides:          miners
+# Required-Start:    $local_fs
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Bitcoin Mining Service
+### END INIT INFO
+
+case "$1" in
+	start)
+		echo "Starting Miners..."
+		screen -dmS bfgminer /home/pi/mining/bfgminer --config=/home/pi/mining/bfgminer.conf --log-file=/home/pi/mining/bfgminer.log
+		echo "  BFG Miner Started"
+		/home/pi/mining/cpuminer/minerd --config=/home/pi/mining/cpuminer.conf >> /home/pi/mining/cpuminer.log 2>&1 &
+		echo "  CPU Miner Started"
+		exit 0
+		;;
+	stop)
+		echo "Stopping Miners..."
+		killall bfgminer minerd
+		echo "  BFG and CPU Miners Stopped"
+		exit 0
+		;;
+	*)
+		echo "Usage: /etc/init.d/miners {start|stop}"
+		exit 1
+		;;
+esac
+
+exit 0
