@@ -77,6 +77,7 @@ Copy file init.d script (see: 'miners' file in this repo) to /etc/init.d/ and se
     cp ./miners /etc/init.d/
     sudo chmod 755 /etc/init.d/miners
     sudo chown root:root /etc/init.d/miners
+    sudo /etc/init.d/miners start
     
 Reboot Rasbberr Pi:
 
