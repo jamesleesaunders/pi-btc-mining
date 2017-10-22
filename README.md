@@ -30,7 +30,7 @@ Install:
 
 Running from command line:
 
-    ./bfgminer -o http://stratum.bitcoin.cz:3333 -u jamesleesaunders.kermit -p woof -S all
+    ./bfgminer -o http://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S all
     
 Running with config (see: 'bfgminer.conf' example file in this repo):
 
@@ -94,7 +94,7 @@ Install:
 
 Running from command line:
 
-    ./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.elmo:woof
+    ./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.ernie:woof
 
 Running with config (see: 'cpuminer.conf' example file in this repo):
 
