@@ -56,7 +56,7 @@ Download source:
 Install:
 
     cd cgminer/
-    ./autogen.sh	# only needed if building from git repo
+    ./autogen.sh
     CFLAGS="-O2 -Wall -march=native" ./configure
     make
 
@@ -85,8 +85,7 @@ Download source:
 Install:
 
     cd cpuminer/
-    ./autogen.sh	# only needed if building from git repo
-    ./nomacro.pl	# in case the assembler doesn't support macros
+    ./autogen.sh
     ./configure CFLAGS="-O3" # Make sure -O3 is an O and not a zero!
     make
 
