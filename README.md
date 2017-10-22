@@ -9,7 +9,7 @@ Setup folder:
 Install dependencies:
 
     sudo apt-get update
-    sudo apt-get install autogen automake autoconf m4 pkg-config libgcrypt20-dev libtool uthash-dev libjansson-dev libevent-dev libcurl4-gnutls-dev libncurses5-dev screen
+    sudo apt-get install autogen automake autoconf m4 pkg-config libgcrypt20-dev libtool uthash-dev libjansson-dev libevent-dev libcurl4-gnutls-dev libncurses5-dev screen libusb-dev vim
 
 ### BFGMiner
 Download source:
