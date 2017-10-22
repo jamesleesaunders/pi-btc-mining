@@ -30,7 +30,7 @@ Install:
 
 Running from command line:
 
-    ./bfgminer -o stratum.bitcoin.cz:3333 -u jamesleesaunders.kermit -p woof -S all
+    ./bfgminer -o http://stratum.bitcoin.cz:3333 -u jamesleesaunders.kermit -p woof -S all
     
 Running with config (see: 'bfgminer.conf' example file in this repo):
 
@@ -53,10 +53,22 @@ Download source:
     Receiving objects: 100% (27988/27988), 19.13 MiB | 1.16 MiB/s, done.
     Resolving deltas: 100% (18298/18298), done.
 
-If building from git:
+Install:
 
-	autoconf (or autoreconf -i ?)
-	automake
+    cd cgminer/
+    autoconf (or autoreconf -i ?)
+    automake
+    ./autogen.sh	# only needed if building from git repo
+    ./configure CFLAGS="-O2 -Wall -march=native"
+    make
+
+Running from command line:
+
+    ./cgminer -o http://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S all
+
+Running with config (see: 'cgminer.conf' example file in this repo):
+
+    ./cgminer --config ../cgminer.conf
 
 ### CPUMiner
 Return back to parent 'mining' directory:
