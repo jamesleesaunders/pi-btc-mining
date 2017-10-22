@@ -62,7 +62,7 @@ Install:
 
 Running from command line:
 
-    ./cgminer -o http://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S all
+    ./cgminer -o http://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof
 
 Running with config (see: 'cgminer.conf' example file in this repo):
 
