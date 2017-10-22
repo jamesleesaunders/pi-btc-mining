@@ -30,7 +30,7 @@ Install:
 
 Running from command line:
 
-    ./bfgminer -o http://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S all
+    ./bfgminer -o stratum+tcp://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S all
     
 Running with config (see: 'bfgminer.conf' example file in this repo):
 
