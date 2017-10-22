@@ -56,8 +56,6 @@ Download source:
 Install:
 
     cd cgminer/
-    autoconf (or autoreconf -i ?)
-    automake
     ./autogen.sh	# only needed if building from git repo
     CFLAGS="-O2 -Wall -march=native" ./configure
     make
