@@ -59,7 +59,7 @@ Install:
     autoconf (or autoreconf -i ?)
     automake
     ./autogen.sh	# only needed if building from git repo
-    ./configure CFLAGS="-O2 -Wall -march=native"
+    CFLAGS="-O2 -Wall -march=native" ./configure
     make
 
 Running from command line:
