@@ -28,14 +28,6 @@ Install:
     ./configure
     make
 
-? If you are using a Raspberry Pi do the following:
-
-    sudo nano /boot/cmdline.txt
-
-? Add the following code at the end of the first line (on the same line as the other text):
-
-    slub_debug=FP
-
 Running from command line:
 
     ./bfgminer -o stratum+tcp://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S all
@@ -65,7 +57,7 @@ Install:
 
     cd cgminer/
     ./autogen.sh
-    CFLAGS="-O2 -Wall -march=native" ./configure
+    CFLAGS="-O2 -Wall -march=native" ./configure --enable-bitmine_A1
     make
 
 Running from command line:
