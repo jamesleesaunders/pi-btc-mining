@@ -39,6 +39,25 @@ Running with config (see: 'bfgminer.conf' example file in this repo):
 Tutotial:
 * https://computers.tutsplus.com/tutorials/how-to-create-a-raspberry-pi-bitcoin-miner--cms-20353?_ga=2.51452969.1697175413.1508571994-1473909186.1508571994
 
+### CGMiner
+Return back to parent 'mining' directory:
+
+    cd ..
+
+Download source:
+
+    pi@raspberrypi:~/mining $ git clone https://github.com/ckolivas/cgminer.git
+    Cloning into 'cgminer'...
+    remote: Counting objects: 27988, done.
+    remote: Total 27988 (delta 0), reused 0 (delta 0), pack-reused 27988
+    Receiving objects: 100% (27988/27988), 19.13 MiB | 1.16 MiB/s, done.
+    Resolving deltas: 100% (18298/18298), done.
+
+If building from git:
+
+	autoconf (or autoreconf -i ?)
+	automake
+
 ### CPUMiner
 Return back to parent 'mining' directory:
 
