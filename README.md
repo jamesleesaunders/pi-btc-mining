@@ -46,7 +46,7 @@ Return back to parent 'mining' directory:
 
 Download source:
 
-    pi@raspberrypi:~/mining $ git clone https://github.com/ckolivas/cgminer.git
+    git clone https://github.com/ckolivas/cgminer.git
     Cloning into 'cgminer'...
     remote: Counting objects: 27988, done.
     remote: Total 27988 (delta 0), reused 0 (delta 0), pack-reused 27988
