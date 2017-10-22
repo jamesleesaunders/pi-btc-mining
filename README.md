@@ -62,11 +62,7 @@ Install:
 
 Running from command line:
 
-    ./cgminer -o http://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof
-
-Running with config (see: 'cgminer.conf' example file in this repo):
-
-    ./cgminer --config ../cgminer.conf
+    ./cgminer --userpass jamesleesaunders.elmo:woof --url stratum+tcp://stratum.slushpool.com:3333
 
 ### CPUMiner
 Return back to parent 'mining' directory:
