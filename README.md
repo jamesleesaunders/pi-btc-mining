@@ -24,6 +24,7 @@ Download source:
 Install:
 
     cd bfgminer/
+    git checkout bf292c686d749ddd908b3832ae25e8bc3b307b7d (this version works better on Pi?)
     ./autogen.sh
     ./configure
     make
