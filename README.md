@@ -91,7 +91,7 @@ Reboot Rasbberr Pi:
     CTRL+A+D
     
 ### Overclocking Notes
-To overclock bfgminer Antminer A1 add:
+To overclock bfgminer Antminer U1 add:
 
     -S antminer:all --set-device antminer:clock=x0881
 
