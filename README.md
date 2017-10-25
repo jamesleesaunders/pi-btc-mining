@@ -87,7 +87,7 @@ Reboot Rasbberr Pi:
 ### AntMiner U1 over clocking Settings
 To overclock bfgminer Antminer U1 add:
 
-    -S antminer:all --set-device antminer:clock=x0881
+    ./bfgminer -o stratum+tcp://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S antminer:all --set-device antminer:clock=x0881
 
 | Frequency | Hash Rate (GH/s) | antminer:clock |
 |-----------|------------------|----------------|
