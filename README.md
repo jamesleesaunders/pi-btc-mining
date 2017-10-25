@@ -58,7 +58,7 @@ Install:
 
     cd cgminer/
     ./autogen.sh
-    CFLAGS="-O2 -Wall -march=native" ./configure --enable-bitmine_A1
+    CFLAGS="-O2 -Wall -march=native" ./configure --enable-icarus
     make
 
 Running from command line:
