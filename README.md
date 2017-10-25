@@ -89,3 +89,15 @@ Reboot Rasbberr Pi:
     screen -ls
     sudo screen -dr bfgminer
     CTRL+A+D
+    
+### Overclocking Notes
+To overclock bfgminer Antminer A1 add:
+
+    -S antminer:all --set-device antminer:clock=x0881
+
+* 0581 = 1.2
+* 0681 = 1.4
+* 0781 = 1.6
+* 0881 = 1.8
+* 0981 = 2.0
+* 0A81 = 2.2
