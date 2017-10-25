@@ -84,20 +84,20 @@ Reboot Rasbberr Pi:
 
     sudo reboot
     
+### AntMiner U1 over clocking Settings
+To overclock bfgminer Antminer U1 add:
+
+    -S antminer:all --set-device antminer:clock=x0881
+
+| Frequency | Hash Rate (GH/s) | antminer:clock |
+|-----------|------------------|----------------|
+| 200       | 1.6 (default)    | x0781          |
+| 225       | 1.8              | x0881          |
+| 250       | 2.0              | x0981          |
+| 275       | 2.2              | x0A81          |
+
 ### Other Random Notes
 
     screen -ls
     sudo screen -dr bfgminer
     CTRL+A+D
-    
-### Overclocking Notes
-To overclock bfgminer Antminer U1 add:
-
-    -S antminer:all --set-device antminer:clock=x0881
-
-* 0581 = 1.2
-* 0681 = 1.4
-* 0781 = 1.6
-* 0881 = 1.8
-* 0981 = 2.0
-* 0A81 = 2.2
