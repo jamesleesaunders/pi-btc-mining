@@ -101,3 +101,6 @@ To overclock bfgminer Antminer U1 add:
     screen -ls
     sudo screen -dr bfgminer
     CTRL+A+D
+
+Other packages required? bfgminer libbase58-0 libblkmaker-0.1-6 libclang-common-3.9-dev libclc-amdgcn libclc-dev libclc-r600 libmicrohttpd12 mesa-opencl-icd
+  ocl-icd-libopencl1
