@@ -84,12 +84,12 @@ Tutorial:
 * https://www.gadgetdaily.xyz/mine-bitcoins-with-raspberry-pi/
 
 ### Create Startup Service
-Copy file init.d script (see: [miners](miners) example file) to /etc/init.d/ and set correct permissions:
+Copy file init.d script (see: [mining](mining) example file) to /etc/init.d/ and set correct permissions:
     
-    cp ./miners /etc/init.d/
-    sudo chmod 755 /etc/init.d/miners
-    sudo chown root:root /etc/init.d/miners
-    sudo /etc/init.d/miners start
+    cp ./mining /etc/init.d/
+    sudo chmod 755 /etc/init.d/mining
+    sudo chown root:root /etc/init.d/mining
+    sudo /etc/init.d/mining start
     
 Reboot Rasbberr Pi:
 
@@ -101,5 +101,6 @@ Reboot Rasbberr Pi:
     sudo screen -dr bfgminer
     CTRL+A+D
 
-Other packages required? bfgminer libbase58-0 libblkmaker-0.1-6 libclang-common-3.9-dev libclc-amdgcn libclc-dev libclc-r600 libmicrohttpd12 mesa-opencl-icd
-  ocl-icd-libopencl1
+Other packages required?
+
+    libbase58-0 libblkmaker-0.1-6 libclang-common-3.9-dev libclc-amdgcn libclc-dev libclc-r600 libmicrohttpd12 mesa-opencl-icd ocl-icd-libopencl1
