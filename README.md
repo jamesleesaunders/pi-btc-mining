@@ -63,7 +63,7 @@ Install:
 
 Running from command line:
 
-    ./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.ernie:woof
+    ./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.ernie:woof --algo sha256d
 
 Running with config (see: 'cpuminer.conf' example file in this repo):
 
