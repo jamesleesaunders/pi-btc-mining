@@ -33,9 +33,20 @@ Running from command line:
 
     ./bfgminer -o stratum+tcp://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S all
     
-Running with config (see: [bfgminer.conf](bfgminer.conf) example file in this repo):
+Running with config (see: [bfgminer.conf](bfgminer.conf) example file):
 
     ./bfgminer --config ../bfgminer.conf
+
+To overclock bfgminer Antminer U1 add changing the 'clock' as per table below:
+
+    ./bfgminer -o stratum+tcp://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S antminer:all --set-device antminer:clock=x0881
+
+| Frequency | Hash Rate (GH/s) | antminer:clock |
+|-----------|------------------|----------------|
+| 200       | 1.6 (default)    | x0781          |
+| 225       | 1.8              | x0881          |
+| 250       | 2.0              | x0981          |
+| 275       | 2.2              | x0A81          |
 
 Tutotial:
 * https://computers.tutsplus.com/tutorials/how-to-create-a-raspberry-pi-bitcoin-miner--cms-20353?_ga=2.51452969.1697175413.1508571994-1473909186.1508571994
@@ -65,7 +76,7 @@ Running from command line:
 
     ./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.ernie:woof --algo sha256d
 
-Running with config (see: 'cpuminer.conf' example file in this repo):
+Running with config (see: [cpuminer.conf](cpuminer.conf) example file):
 
     ./minerd --config ../cpuminer.conf
 
@@ -73,7 +84,7 @@ Tutorial:
 * https://www.gadgetdaily.xyz/mine-bitcoins-with-raspberry-pi/
 
 ### Create Startup Service
-Copy file init.d script (see: 'miners' file in this repo) to /etc/init.d/ and set correct permissions:
+Copy file init.d script (see: [miners](miners) example file) to /etc/init.d/ and set correct permissions:
     
     cp ./miners /etc/init.d/
     sudo chmod 755 /etc/init.d/miners
@@ -83,18 +94,6 @@ Copy file init.d script (see: 'miners' file in this repo) to /etc/init.d/ and se
 Reboot Rasbberr Pi:
 
     sudo reboot
-    
-### AntMiner U1 over clocking Settings
-To overclock bfgminer Antminer U1 add:
-
-    ./bfgminer -o stratum+tcp://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S antminer:all --set-device antminer:clock=x0881
-
-| Frequency | Hash Rate (GH/s) | antminer:clock |
-|-----------|------------------|----------------|
-| 200       | 1.6 (default)    | x0781          |
-| 225       | 1.8              | x0881          |
-| 250       | 2.0              | x0981          |
-| 275       | 2.2              | x0A81          |
 
 ### Other Random Notes
 
