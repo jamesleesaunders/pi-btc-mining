@@ -1,5 +1,5 @@
 #! /bin/bash
-# /etc/init.d/miners
+# /etc/init.d/mining
 
 ### BEGIN INIT INFO
 # Provides:          miners
