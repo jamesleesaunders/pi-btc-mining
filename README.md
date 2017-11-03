@@ -9,7 +9,7 @@ Setup folder:
 Install dependencies:
 
     sudo apt-get update
-    sudo apt-get install autogen automake autoconf m4 pkg-config libgcrypt20-dev libtool uthash-dev libjansson-dev libevent-dev libcurl4-gnutls-dev libncurses5-dev screen vim
+    sudo apt-get install autogen automake autoconf m4 pkg-config libgcrypt20-dev libtool uthash-dev libjansson-dev libevent-dev libcurl4-gnutls-dev libncurses5-dev screen vim libbase58-0 libblkmaker-0.1-6 libclang-common-3.9-dev libclc-amdgcn libclc-dev libclc-r600 libmicrohttpd12 mesa-opencl-icd ocl-icd-libopencl1
 
 ### BFGMiner
 Download source:
@@ -86,7 +86,7 @@ Tutorial:
 ### Create Startup Service
 Copy file init.d script (see: [mining](mining) example file) to /etc/init.d/ and set correct permissions:
     
-    cp ./mining /etc/init.d/
+    sudo cp ./mining /etc/init.d/
     sudo chmod 755 /etc/init.d/mining
     sudo chown root:root /etc/init.d/mining
     sudo /etc/init.d/mining start
@@ -94,13 +94,3 @@ Copy file init.d script (see: [mining](mining) example file) to /etc/init.d/ and
 Reboot Rasbberr Pi:
 
     sudo reboot
-
-### Other Random Notes
-
-    screen -ls
-    sudo screen -dr bfgminer
-    CTRL+A+D
-
-Other packages required?
-
-    libbase58-0 libblkmaker-0.1-6 libclang-common-3.9-dev libclc-amdgcn libclc-dev libclc-r600 libmicrohttpd12 mesa-opencl-icd ocl-icd-libopencl1
