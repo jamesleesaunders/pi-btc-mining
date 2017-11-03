@@ -93,7 +93,16 @@ Copy file init.d script (see: [mining](mining) example file) to /etc/init.d/ and
     sudo cp ./mining /etc/init.d/
     sudo chmod 755 /etc/init.d/mining
     sudo chown root:root /etc/init.d/mining
+    
+Test it starts and stops:
+
     sudo /etc/init.d/mining start
+    sudo /etc/init.d/mining stop
+    
+Set it to start automatically on boot with:    
+
+    sudo update-rc.d mining defaults
+    sudo update-rc.d mining enable
     
 Reboot Rasbberr Pi:
 
