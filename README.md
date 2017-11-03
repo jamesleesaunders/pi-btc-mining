@@ -5,6 +5,7 @@ Setup folder:
 
     mkdir mining
     cd mining
+    git clone https://github.com/jamesleesaunders/pi-btc-mining.git
 
 Install dependencies:
 
