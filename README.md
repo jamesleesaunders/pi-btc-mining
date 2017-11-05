@@ -131,7 +131,7 @@ Add:
 
 Test with:
 
-    sudo logrotate -f /etc/logrotate.conf
+    sudo logrotate -f -d /etc/logrotate.conf
     
 Reboot Rasbberr Pi:
 
