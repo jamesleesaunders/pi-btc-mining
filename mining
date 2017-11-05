@@ -26,7 +26,7 @@ case "$1" in
 		exit 0
 		;;
 	*)
-		echo "Usage: /etc/init.d/miners {start|stop}"
+		echo "Usage: /etc/init.d/mining {start|stop}"
 		exit 1
 		;;
 esac
