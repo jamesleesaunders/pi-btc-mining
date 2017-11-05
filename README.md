@@ -107,3 +107,32 @@ Set it to start automatically on boot with:
 Reboot Rasbberr Pi:
 
     sudo reboot
+    
+Check mining service running:
+
+    ps -A | grep mine
+    268 ?        14:03:06 minerd
+    269 pts/1    00:02:11 bfgminer
+
+### Setup logrotate
+Rotate logs to ensure we don't eat up space with log files:
+
+    sudo vim /etc/logrotate.conf
+    
+Add:
+
+    # system-specific logs may be configured here
+    /home/pi/mining/bfgminer.log /home/pi/mining/cpuminer.log {
+        missingok
+        weekly
+        rotate 4
+        create 0644 root utmp
+    }
+
+Test with:
+
+    sudo logrotate -f /etc/logrotate.conf
+    
+Reboot Rasbberr Pi:
+
+    sudo reboot
