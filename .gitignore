@@ -1,3 +1,4 @@
 bfgminer
 cpuminer
 *.log
+*.log.*
