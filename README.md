@@ -46,7 +46,7 @@ make
 Running from command line:
 
 ```
-./bfgminer -o stratum+tcp://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S all
+./bfgminer -o stratum+tcp://206.189.78.140:4032 -u BKsaUAz6QDn5crJMbvYB8HSPdUX52j2kVA -p xxxx -S all
 ```
 
 Running with config (see: [bfgminer.conf](bfgminer.conf) example file):
@@ -58,7 +58,7 @@ Running with config (see: [bfgminer.conf](bfgminer.conf) example file):
 To overclock bfgminer Antminer U1 add changing the 'clock' as per table below:
 
 ```
-./bfgminer -o stratum+tcp://stratum.bitcoin.cz:3333 -u jamesleesaunders.bert -p woof -S antminer:all --set-device antminer:clock=x0881
+./bfgminer -o stratum+tcp://206.189.78.140:3032 -u BKsaUAz6QDn5crJMbvYB8HSPdUX52j2kVA -p xxxx -S antminer:all --set-device antminer:clock=x0881
 ```
 
 | Frequency | Hash Rate (GH/s) | antminer:clock |
@@ -100,7 +100,7 @@ make
 Running from command line:
 
 ```
-./minerd --url stratum+tcp://stratum.bitcoin.cz:3333 --userpass jamesleesaunders.ernie:woof --algo sha256d
+./minerd --url stratum+tcp://206.189.78.140:4032 --userpass BKsaUAz6QDn5crJMbvYB8HSPdUX52j2kVA:xxxx --algo scrypt
 ```
 
 Running with config (see: [cpuminer.conf](cpuminer.conf) example file):
